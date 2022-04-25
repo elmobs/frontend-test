@@ -55,3 +55,25 @@ export const MenuContainer = styled.nav`
 `;
 
 
+export const MenuItemButton = styled.button`
+    font-size: 16px;
+    color: ${props => props.theme.color.info};
+    
+    border: none;
+    background: none;
+
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+
+    transition: opacity .4s;
+
+    &:hover {
+        opacity: .8;
+    }
+    > svg {
+        font-size: 18px;
+        margin-right: 6px;
+    }
+
+`;

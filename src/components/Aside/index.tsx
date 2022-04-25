@@ -7,9 +7,12 @@ import { Link } from "react-router-dom";
 
 import LogoImg from '../../assets/Logo.png';
 
-import { Container, Header, LogImg, Title , MenuContainer } from './styles';
+import {useAuth} from '../../hooks/auth';
+
+import { Container, Header, LogImg, Title , MenuContainer, MenuItemButton } from './styles';
 
 const Aside: React.FC = () => {
+    const { signOut } = useAuth();
 
     return (
         <Container>
@@ -33,10 +36,10 @@ const Aside: React.FC = () => {
                     Geração Solar
                 </Link>
 
-                <Link to="exit-generation">
+                <MenuItemButton onClick={signOut}>
                     <MdExitToApp />
                     Sair
-                </Link>
+                </MenuItemButton>
             </MenuContainer>
         </Container>
         
