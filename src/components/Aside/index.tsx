@@ -18,7 +18,7 @@ const Aside: React.FC = () => {
                 <Title>DashBoard Eolica/Solar</Title>
             </Header>
             <MenuContainer>
-                <Link to="/dashboard">
+                <Link to="/">
                     <MdDashboard />
                     DashBoard
                 </Link>
